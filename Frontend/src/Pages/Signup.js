@@ -17,7 +17,7 @@ export default function Signup() {
   const submitHandler = (data) => {
     
     setLoading(true);
-    axios.post("https://quizapp-g98o.onrender.com/signup", data).then((res) => {
+    axios.post("https://quizapp2-hx79.onrender.com/signup", data).then((res) => {
       setLoading(false);
       console.log(res);
       if (res.data === "exist") {
