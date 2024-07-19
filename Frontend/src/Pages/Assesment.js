@@ -20,7 +20,7 @@ const AssessmentPage = () => {
           question: question.question,
           options: question.incorrect_answers.concat(question.correct_answer).map((option, idx) => ({
             option,
-            score: option === question.correct_answer ? 4 : idx + 1 // Assign scores, with correct answer getting the highest score
+            score: option === question.correct_answer ? 4 : 0 // Assign scores, with correct answer getting the highest score
           }))
         }));
         setQuestions(formattedQuestions);
